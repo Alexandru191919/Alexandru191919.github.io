@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Transgender_Pride_flag.svg/800px-Transgender_Pride_flag.svg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.spin-blahaj {
+    animation: spin 8s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        tranform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
