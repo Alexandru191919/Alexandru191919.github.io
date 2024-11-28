@@ -1,82 +1,87 @@
- <!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Página HTML</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
+        /* Menu bar styling */
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-around;
             padding: 10px 0;
-            text-align: center;
+            z-index: 1;
         }
-        nav {
-            background-color: #0056b3;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
+
+        .menu a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            font-size: 1.2em;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        nav a:hover {
-            text-decoration: underline;
+
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
         }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
+
+        /* Positioning the audio player at the bottom right */
+        .audio-player {
             position: fixed;
-            bottom: 0;
-            width: 100%;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        /* Positioning text at the bottom left */
+        .bottom-left-text {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 1x;
+            font-family: Arial, sans-serif;
+            z-index: 2;
         }
     </style>
+
 </head>
-<body>
+<body style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: black; font-family: Arial, sans-serif;">
 
-<header>
-    <h1>Bienvenido a Mi Página</h1>
-</header>
+<!-- Menu Bar -->
+<div class="menu">
+    <a href="https://alexandru191919.github.io/spinning-blahaj/" target="_blank">Spinning blåhaj</a>
+    <a href="https://www.zombo.com" target="_blank">???</a>
+    <a href="https://www.esviernes.com" target="_blank">???</a>
+    <a href="https://www.d-e-f-i-n-i-t-e-l-y.com" target="_blank">???</a>
+</div>
 
-<nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#acerca">Acerca de</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+<!-- Background Image and Text -->
+<img src="c:\Users\Popi\Pictures\BAGMAN.jpg" alt="Trulli" style="position: absolute; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
 
-<main>
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>Este es un ejemplo de página HTML básica con estilo incorporado. Puedes personalizarla según tus necesidades.</p>
-    </section>
+<div style="position: relative; text-align: center;">
+    <b style="margin: 0; font-size: 3em; color: black;">I AM THE BAGMAN.</b>
+    <p style="margin: 0; font-size: 2.5em; color: black;">I LOVE EATING BAGS</p>
+    <p style="margin: 0; font-size: 2.5em; color: black;"> AND <a href="https://open.spotify.com/intl-es/artist/53e9n1LucuH3guikmtv180" style="color: blue; text-decoration: none;">FEMTANYL</a> TOO!!</p>
+</div>
 
-    <section id="acerca">
-        <h2>Acerca de</h2>
-        <p>Esta página fue creada para demostrar cómo estructurar un documento HTML con CSS básico.</p>
-    </section>
+<!-- Bottom Left Text -->
+<div class="bottom-left-text">
+    <b style="margin: 0; font-size: 2em; color: white;">:3</b>
+</div>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarnos enviando un correo a <a href="mailto:info@example.com">info@example.com</a>.</p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2024 Mi Página. Todos los derechos reservados.</p>
-</footer>
-
+<!-- Audio Player in Bottom Right -->
+<div class="audio-player">
+    <audio controls autoplay>
+        <!-- Make sure the MP3 file is in the same folder as your HTML file -->
+        <source src="Ilovebags.mp3" type="audio/mp3">
+        Your browser doesn't like bags, eww...
+    </audio>
+</div>
 </body>
 </html>
