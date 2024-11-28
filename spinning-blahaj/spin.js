@@ -35,7 +35,7 @@ function explodeBlahaj() {
     explosionGif.classList.add("explosion-gif");
     
     // Create an audio element for the explosion sound
-    const explosionSound = new Audio("beep-07.wav"); // Example sound file
+    const explosionSound = new Audio("boom.mp3"); // Example sound file
     
     // Play the explosion sound
     explosionSound.play();
